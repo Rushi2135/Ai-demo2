@@ -1,0 +1,8 @@
+ kubeadm join master.demo.lab:6443 --token qof4wp.vho4bl4my09rv5dl \
+	--discovery-token-ca-cert-hash sha256:e61b675604aec24db6a3e924da32de7fc343d8524a14f82f4ccd1d8bfe8feee7 \
+	--control-plane 
+
+Then you can join any number of worker nodes by running the following on each as root:
+
+kubeadm join master.demo.lab:6443 --token qof4wp.vho4bl4my09rv5dl \
+	--discovery-token-ca-cert-hash sha256:e61b675604aec24db6a3e924da32de7fc343d8524a14f82f4ccd1d8bfe8feee7
